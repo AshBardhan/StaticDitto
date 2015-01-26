@@ -18,16 +18,18 @@ section.module {
   }
   p {
     margin-bottom: @margin-medium;
-    .text-base;
+    .text-medium;
     .text-normal;
     @media all and (min-width: 767px) {
-      .text-medium;
+      .text-large;
     }
   }
   .row {
     margin-top: 0;
+    .page-title {
+      font-size: 3.5em;
+    }
   }
-
   p:last-child, .row:last-child {
     margin-bottom: 0;
   }
