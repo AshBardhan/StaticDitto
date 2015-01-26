@@ -6,6 +6,7 @@ angular.module('myApp', ['ngRoute']).
     $routeProvider.when('/', {templateUrl: 'partial/home'});
     $routeProvider.when('/company', {templateUrl: 'partial/company'});
     $routeProvider.when('/contactus', {templateUrl: 'partial/contactus'});
+    $routeProvider.when('/team', {templateUrl: 'partial/team'});
     $routeProvider.when('/investors', {templateUrl: 'partial/investors'});
     $routeProvider.when('/careers', {templateUrl: 'partial/careers'});
     $routeProvider.when('/analytics', {templateUrl: 'partial/analytics'});
