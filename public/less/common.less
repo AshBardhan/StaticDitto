@@ -44,3 +44,108 @@
     margin-right: @margin-base;
   }
 }
+
+.data_bar {
+  font-size: 2.5em;
+  margin-top: @margin-small;
+  > span {
+    &:nth-child(1) {
+      background-color: rgb(115, 115, 115);
+      padding: 0 0.8%;
+      opacity: 0.9;
+      .text-white;
+      .text-right;
+      &:hover {
+        opacity: 1;
+      }
+      &.danger {
+        background-color: rgb(158, 50, 41);
+      }
+      &.primary {
+        background-color: rgb(8, 56, 121);
+      }
+      &.info {
+        background-color: rgb(26, 145, 197);
+      }
+      &.warning {
+        background-color: rgb(189, 122, 17);
+      }
+      &.success {
+        background-color: rgb(17, 189, 117);
+      }
+    }
+    &:nth-child(2) {
+      .bkground-light;
+      padding: 0 2% 0 0.8%;
+      white-space: pre-wrap;
+      line-height: 160%;
+      .text-dark;
+    }
+  }
+}
+
+.title-icon {
+  color: rgb(0, 88, 161);
+  font-size: 1.1em;
+  &.danger {
+    color: rgb(168, 8, 2);
+  }
+  &.info {
+    color: rgb(0, 88, 161);
+  }
+  &.primary {
+    color: rgb(14, 34, 61);
+  }
+  &.warning {
+    color: rgb(255, 162, 18);
+  }
+  &.default {
+    color: rgb(0, 88, 161);
+  }
+  &.success {
+    color: rgb(142, 144, 143);
+  }
+}
+
+.box-data {
+  .text-center;
+  .text-top;
+  color: rgb(98, 98, 98);
+  padding: 2em;
+  height: 22em;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
+  a {
+    text-decoration: none;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #2098d1;
+    height: 4px;
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  &:hover, &:focus, &:active {
+    &::before{
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+}
