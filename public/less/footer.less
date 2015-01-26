@@ -1,6 +1,6 @@
 footer {
   .text-large;
-  .text-light;
+  .text-gray;
   padding: @padding-base 0;
   ul {
     margin-bottom: 0;
@@ -9,5 +9,12 @@ footer {
         .text-white;
       }
     }
+  }
+  a, a:visited {
+    text-decoration: none;
+    .text-gray;
+  }
+  a:hover, a:focus {
+    .text-light;
   }
 }

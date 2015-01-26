@@ -2,46 +2,45 @@ extends layouts/default
 
 block content
   header.navbar.navbar-inverse
-    .content
-      .container-fluid
-        .row
-          .col-xs-1.visible-xs
-          .col-xs-10.col-sm-3.header-image
-            a(href='/')
-              img(src='images/silverpush.png')
-          .col-sm-9.hidden-xs.text-right
-            ul.nav.navbar-nav.navbar-right
-              li
-                a(href='/') Home
-              li.dropdown
-                a.dropdown-toggle(data-toggle='dropdown', role='button', aria-expanded='true')
-                  | About
-                  span.caret
-                ul.dropdown-menu(role='menu')
-                  li
-                    a(href='company') Company
-                  li
-                    a(href='team') Team
-                  li
-                    a(href='investors') Investors
-                  li
-                    a(href='contactus') Contact Us
-                  li.divider
-                  li
-                    a(href='http://blog.silverpush.com/', target='_blank') Blog
-              li.dropdown
-                a.dropdown-toggle(data-toggle='dropdown', role='button', aria-expanded='false')
-                  | Products
-                  span.caret
-                ul.dropdown-menu(role='menu')
-                  li
-                    a(href='analytics') Analytics
-                  li
-                    a(href='targeting') Targeting
-                  li
-                    a(href='measurement') Measurement
-              li
-                a(href='careers') Careers
+    .container
+      .row
+        .col-xs-1.visible-xs
+        .col-xs-10.col-sm-3.header-image
+          a(href='/')
+            img(src='images/silverpush.png')
+        .col-sm-9.hidden-xs.text-right
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href='/') Home
+            li.dropdown
+              a.dropdown-toggle(data-toggle='dropdown', role='button', aria-expanded='true')
+                | About
+                span.caret
+              ul.dropdown-menu(role='menu')
+                li
+                  a(href='company') Company
+                li
+                  a(href='team') Team
+                li
+                  a(href='investors') Investors
+                li
+                  a(href='contactus') Contact Us
+                li.divider
+                li
+                  a(href='http://blog.silverpush.com/', target='_blank') Blog
+            li.dropdown
+              a.dropdown-toggle(data-toggle='dropdown', role='button', aria-expanded='false')
+                | Products
+                span.caret
+              ul.dropdown-menu(role='menu')
+                li
+                  a(href='analytics') Analytics
+                li
+                  a(href='targeting') Targeting
+                li
+                  a(href='measurement') Measurement
+            li
+              a(href='careers') Careers
 
   div(ng-view)
 

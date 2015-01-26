@@ -1,3 +1,103 @@
-.row
-	.col-lg-12
-		p This is the partial for Home
+section.module.parallax.parallax-home.ng-scope
+  .container
+    .row#header-txt
+      .col-md-offset-7.col-md-5.col-sm-offset-6.col-sm-6.col-xs-offset-1.col-xs-10(style='background-color:rgba(255, 255, 255, 0.48);')
+        .animated.fadeIn
+          b.animated.bounceInDown Unifying
+          p.animated.bounceInUp people, devices and data
+
+section#tech-div.module.content.ng-scope
+  .container
+    h2 Creating Deterministic Cross Device Pairs
+    .row
+      .col-md-4.wow.fadeInLeft.animated(style='visibility: visible; -webkit-animation: fadeInLeft;')
+        a
+          img.center-block(src='images/audiobeacon-icon.png', alt='')
+          h3 Capture Audio Beacon
+        p When a Silverpush Audio beacon is emitted from a device in proximity of a Silverpush SDK, a pair is made between the beacon&apos;s unique ID and the mobile device ID
+      .col-md-4.wow.fadeInLeft.animated(style='visibility: visible; -webkit-animation: fadeInLeft;')
+        a
+          img.center-block(src='images/data-icon.png', alt='')
+          h3 Pair Devices
+        p Once the pair is made, the two ID&apos;s are sent to Silverpush&apos;s Server and saved under the user&apos;s Unique Silverpush ID
+      .col-md-4.wow.fadeInLeft.animated(style='visibility: visible; -webkit-animation: fadeInLeft;')
+        a
+          img.center-block(src='images/retarget-icon.png', alt='')
+          h3 Extend Matches
+        p Deterministically matched data from the audio beacon is fed into the machine learning system to create more probablistic matches
+
+section.module.parallax.narrow.parallax-product.ng-scope
+  .container
+    h1 Products
+
+section#product-div.module.content.ng-scope
+  .container
+    h2 ..built upon our cross device data intelligence
+    .row
+      .col-md-4.wow.fadeInLeft.animated(style='visibility: visible; -webkit-animation: fadeInLeft;')
+        a(href='analytics')
+          img.center-block(src='images/analytics-icon.png', alt='')
+          h3 SilverPush Analytics
+      .col-md-4.wow.fadeInUp.animated(style='visibility: visible; -webkit-animation: fadeInUp;')
+        a(href='targeting')
+          img.center-block(src='images/targeting-icon.png', alt='')
+          h3 Audience Targeting
+      .col-md-4.wow.fadeInRight.animated(style='visibility: visible; -webkit-animation: fadeInRight;')
+        a(href='measurement')
+          img.center-block(src='images/measurement-icon.png', alt='')
+          h3 Measurement
+
+section.module.content.bg-darkgrey.ng-scope
+  .container-fluid
+    h1.retroshadow We work for..
+    center
+      ul.list-inline
+        li
+          img.img-responsive.img-gs(src='images/clients/rbs.png', alt='')
+        li
+          img.img-responsive.img-gs(src='images/clients/google.png', alt='')
+        li
+          img.img-responsive.img-gs(src='images/clients/nestle.png', alt='')
+        li
+          img.img-responsive.img-gs(src='images/clients/mcd.png', alt='')
+        li
+          img.img-responsive.img-gs(src='images/clients/kellog.png', alt='')
+        li
+          img.img-responsive.img-gs(src='images/clients/verisign.png', alt='')
+        li
+          img.img-responsive.img-gs(src='images/clients/disney.png', alt='')
+        li
+          img.img-responsive.img-gs(src='images/clients/cn.png', alt='')
+
+section.module.content.no-bottom-pad.bg-white.ng-scope
+  .container-fluid
+    h1.retroshadow ..In a Nutshell
+    .row
+      .col-lg-6
+        .row
+          .col-sm-6.info-box.reverse
+            p 50 TB
+            p Data Processed/Day
+          .col-sm-6.info-box
+            p 80% +
+            p Accuracy
+          .col-sm-6.col-sm-push-6.info-box.reverse
+            p 1.2 Bn
+            p Devices Identified
+          .col-sm-6.col-sm-pull-6.info-box
+            p 680 Mn
+            p Unique Users Mapped
+      .col-lg-6
+        .row
+          .col-sm-6.info-box.reverse
+            p 25+
+            p Countries Reached
+          .col-sm-6.info-box
+            p 3 Bn +
+            p Ad Request/Day
+          .col-sm-6.col-sm-push-6.info-box.reverse
+            p 80+
+            p Top Brands
+          .col-sm-6.col-sm-pull-6.info-box
+            p 9
+            p Patents Filed

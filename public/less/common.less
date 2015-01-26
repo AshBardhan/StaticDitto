@@ -1,0 +1,28 @@
+.info-box {
+  .bkground-white;
+  .text-black;
+  padding: 1em;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  &.reverse {
+    .text-white;
+    .bkground-black;
+  }
+  &:hover {
+    background-color: rgba(0, 190, 162, 0.78);
+    .text-white;
+    cursor: default;
+    &.reverse {
+      .text-black;
+    }
+  }
+  p {
+    font-size: 2em !important;
+    &:first-child {
+      font-size: 6em !important;
+      .text-bold;
+    }
+  }
+}
