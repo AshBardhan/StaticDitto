@@ -1,5 +1,7 @@
-@-ms-viewport {
-  width: auto;
+@-ms-viewport
+{
+  width: auto
+;
 }
 
 html {
@@ -12,7 +14,7 @@ html {
   @media screen and (min-width: 768px) and (max-width: 991px) {
     font-size: 14.5px !important;
   }
-  @media screen and (max-width: 767px){
+  @media screen and (max-width: 767px) {
     font-size: 14px !important;
   }
 }
@@ -29,10 +31,14 @@ body {
 
 h1 {
   font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
-  font-size: 4rem;
+  font-size: 5em;
   padding: 0 0 0.5em 0;
   .text-center;
+  text-transform: uppercase;
   text-rendering: optimizeLegibility;
+  @media screen and (max-width: 767px) {
+    font-size: 4em;
+  }
   .elegantshadow {
     color: #131313;
     letter-spacing: .15em;
@@ -211,4 +217,8 @@ legend {
   -webkit-border-radius: @border-radius-half;
   -moz-border-radius: @border-radius-half;
   border-radius: @border-radius-half;
+}
+
+.faded {
+  opacity: 0.55;
 }

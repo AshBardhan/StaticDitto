@@ -1,0 +1,191 @@
+.team_box_img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 300px;
+  padding: 0;
+  .text-center;
+  border: 5px solid rgb(74, 160, 186);
+  &.long {
+    @media screen and (min-width: 768px) {
+      height: 400px;
+    }
+  }
+}
+
+.panel.panel-default.team-panel {
+  border: 12px solid white;
+  border-radius: 0;
+}
+
+#hitesh_chawla {
+  background-image: url(../images/team/hitesh_chawla.jpg);
+}
+
+#mudit_seth {
+  background-image: url(../images/team/mudit_seth.jpg);
+}
+
+#alex_modon {
+  background-image: url(../images/team/alex_modon.jpg);
+}
+
+#anil_kundu {
+  background-image: url(../images/team/anil_kundu.jpg);
+}
+
+#debasish_mitra {
+  background-image: url(../images/team/debasish_mitra.jpg);
+}
+
+#vikram_tiwari {
+  background-image: url(../images/team/vikram_tiwari.jpg);
+}
+
+#vivek_bajpai {
+  background-image: url(../images/team/vivek_bajpai.jpg);
+}
+
+#aman_nagpal {
+  background-image: url(../images/team/aman_nagpal.jpg);
+}
+
+#pragyank_bana {
+  background-image: url(../images/team/pragyank_bana.jpg);
+}
+
+#adarsh_sasi {
+  background-image: url(../images/team/adarsh_sasi.jpg);
+}
+
+#nishant_srivastava {
+  background-image: url(../images/team/nishant_srivastava.jpg);
+}
+
+#matt_casey {
+  background-image: url(../images/team/matt_casey.jpg);
+}
+
+#jules_levi {
+  background-image: url(../images/team/jules_levi.jpg);
+}
+
+#abhimanyu_yadav {
+  background-image: url(../images/team/abhimanyu_yadav.jpg);
+}
+
+#ankit_paul {
+  background-image: url(../images/team/ankit_paul.jpg);
+}
+
+#rimakshi {
+  background-image: url(../images/team/rimakshi.jpg);
+}
+
+#prena_reddy {
+  background-image: url(../images/team/prena_reddy.jpg);
+}
+
+#rahul_joshi {
+  background-image: url(../images/team/rahul_joshi.jpg);
+}
+
+#tanvi_thakral {
+  background-image: url(../images/team/tanvi_thakral.jpg);
+}
+
+#anuj_prakash {
+  background-image: url(../images/team/anuj_prakash.jpg);
+}
+
+#rahul_gupta {
+  background-image: url(../images/team/rahul_gupta.jpg);
+}
+
+#shipra_mishra {
+  background-image: url(../images/team/shipra_mishra.jpg);
+}
+
+#piyush_bhatt {
+  background-image: url(../images/team/piyush_bhatt.jpg);
+}
+
+.hover-div {
+  position: relative;
+  .text-white;
+  min-height: 100%;
+  min-width: 100%;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  &:hover {
+    opacity: 1;
+    background-color: rgba(39, 39, 39, 0.87);
+    cursor: default;
+  }
+}
+
+.bottom-box1 {
+  min-height: 110px;
+  min-width: 100%;
+  bottom: 100px;
+  position: absolute;
+  padding: @padding-base @padding-medium;
+  .text-center;
+  .text-white;
+  > p.desc {
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 300;
+    font-size: 1.3em;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+}
+
+.bottom-box2 {
+  min-height: 60px;
+  min-width: 100%;
+  background-color: rgba(255, 255, 255, 1);
+  .text-white;
+  bottom: 0;
+  position: absolute;
+  padding: @padding-base @padding-medium;
+  color: rgb(61, 61, 61);
+  > p {
+    &.title {
+      position: absolute;
+      font-weight: 500;
+      font-size: 1.5em;
+      .text-large;
+      margin-bottom: @margin-small;
+      bottom: 30%;
+      left: 5%;
+    }
+    &.pos {
+      position: absolute;
+      font-weight: 400;
+      .text-base;
+      margin-bottom: 0;
+      bottom: 5%;
+      left: 5%;
+      color: rgba(26, 26, 26, 0.47);
+    }
+
+    &.links {
+      position: absolute;
+      .text-medium;
+      margin-bottom: 0;
+      bottom: 10%;
+      right: 5%;
+    }
+  }
+}
+
+.links>a {
+  font-size: 2.5em;
+  padding: 0 0.1em;
+}

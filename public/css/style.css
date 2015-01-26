@@ -1,5 +1,6 @@
 @-ms-viewport {
-  width: auto;
+  width: auto
+;
 }
 @media screen and (min-width: 1200px) {
   html {
@@ -32,10 +33,16 @@ body {
 }
 h1 {
   font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
-  font-size: 4rem;
+  font-size: 5em;
   padding: 0 0 0.5em 0;
   text-align: center;
+  text-transform: uppercase;
   text-rendering: optimizeLegibility;
+}
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 4em;
+  }
 }
 h1 .elegantshadow {
   color: #131313;
@@ -174,6 +181,9 @@ legend {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
+}
+.faded {
+  opacity: 0.55;
 }
 .page-title {
   font-size: 3em;
@@ -432,7 +442,7 @@ section.module a:focus {
   text-decoration: none;
 }
 section.module h2 {
-  margin-bottom: 40px;
+  margin-bottom: 2em;
   font-size: 2em;
 }
 @media all and (min-width: 992px) {
@@ -462,10 +472,10 @@ section.module .row:last-child {
 }
 section.module.content {
   overflow: hidden;
-  padding: 40px 0;
+  padding: 2em 0;
 }
 section.module.content.no-bottom-pad {
-  padding: 40px 0 0 0;
+  padding: 2em 0 0 0;
 }
 section.module #header-txt {
   height: 700px;
@@ -517,6 +527,166 @@ section.module#home-data-div .col-md-10 > p:first-child {
 }
 section.module#home-data-div .col-md-10 > p:nth-child(2) {
   font-size: 2.2em;
+}
+.team_box_img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 300px;
+  padding: 0;
+  text-align: center;
+  border: 5px solid #4aa0ba;
+}
+@media screen and (min-width: 768px) {
+  .team_box_img.long {
+    height: 400px;
+  }
+}
+.panel.panel-default.team-panel {
+  border: 12px solid white;
+  border-radius: 0;
+}
+#hitesh_chawla {
+  background-image: url(../images/team/hitesh_chawla.jpg);
+}
+#mudit_seth {
+  background-image: url(../images/team/mudit_seth.jpg);
+}
+#alex_modon {
+  background-image: url(../images/team/alex_modon.jpg);
+}
+#anil_kundu {
+  background-image: url(../images/team/anil_kundu.jpg);
+}
+#debasish_mitra {
+  background-image: url(../images/team/debasish_mitra.jpg);
+}
+#vikram_tiwari {
+  background-image: url(../images/team/vikram_tiwari.jpg);
+}
+#vivek_bajpai {
+  background-image: url(../images/team/vivek_bajpai.jpg);
+}
+#aman_nagpal {
+  background-image: url(../images/team/aman_nagpal.jpg);
+}
+#pragyank_bana {
+  background-image: url(../images/team/pragyank_bana.jpg);
+}
+#adarsh_sasi {
+  background-image: url(../images/team/adarsh_sasi.jpg);
+}
+#nishant_srivastava {
+  background-image: url(../images/team/nishant_srivastava.jpg);
+}
+#matt_casey {
+  background-image: url(../images/team/matt_casey.jpg);
+}
+#jules_levi {
+  background-image: url(../images/team/jules_levi.jpg);
+}
+#abhimanyu_yadav {
+  background-image: url(../images/team/abhimanyu_yadav.jpg);
+}
+#ankit_paul {
+  background-image: url(../images/team/ankit_paul.jpg);
+}
+#rimakshi {
+  background-image: url(../images/team/rimakshi.jpg);
+}
+#prena_reddy {
+  background-image: url(../images/team/prena_reddy.jpg);
+}
+#rahul_joshi {
+  background-image: url(../images/team/rahul_joshi.jpg);
+}
+#tanvi_thakral {
+  background-image: url(../images/team/tanvi_thakral.jpg);
+}
+#anuj_prakash {
+  background-image: url(../images/team/anuj_prakash.jpg);
+}
+#rahul_gupta {
+  background-image: url(../images/team/rahul_gupta.jpg);
+}
+#shipra_mishra {
+  background-image: url(../images/team/shipra_mishra.jpg);
+}
+#piyush_bhatt {
+  background-image: url(../images/team/piyush_bhatt.jpg);
+}
+.hover-div {
+  position: relative;
+  color: #ffffff;
+  min-height: 100%;
+  min-width: 100%;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.hover-div:hover {
+  opacity: 1;
+  background-color: rgba(39, 39, 39, 0.87);
+  cursor: default;
+}
+.bottom-box1 {
+  min-height: 110px;
+  min-width: 100%;
+  bottom: 100px;
+  position: absolute;
+  padding: 0.5em 1em;
+  text-align: center;
+  color: #ffffff;
+}
+.bottom-box1 > p.desc {
+  font-family: 'Kaushan Script', cursive;
+  font-weight: 300;
+  font-size: 1.3em;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.bottom-box2 {
+  min-height: 60px;
+  min-width: 100%;
+  background-color: #ffffff;
+  color: #ffffff;
+  bottom: 0;
+  position: absolute;
+  padding: 0.5em 1em;
+  color: #3d3d3d;
+}
+.bottom-box2 > p.title {
+  position: absolute;
+  font-weight: 500;
+  font-size: 1.5em;
+  font-size: 1.3em;
+  margin-bottom: 0.25em;
+  bottom: 30%;
+  left: 5%;
+}
+.bottom-box2 > p.pos {
+  position: absolute;
+  font-weight: 400;
+  font-size: 1em;
+  margin-bottom: 0;
+  bottom: 5%;
+  left: 5%;
+  color: rgba(26, 26, 26, 0.47);
+}
+.bottom-box2 > p.links {
+  position: absolute;
+  font-size: 1.15em;
+  margin-bottom: 0;
+  bottom: 10%;
+  right: 5%;
+}
+.links > a {
+  font-size: 2.5em;
+  padding: 0 0.1em;
 }
 .parallax-home > .container > h2 {
   font-size: 6rem;
