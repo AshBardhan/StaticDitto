@@ -28,6 +28,7 @@ body {
   min-width: 320px;
   margin: 0;
   font-size: 1rem !important;
+  font-weight: 300;
 }
 h1 {
   font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
@@ -206,6 +207,9 @@ img {
   font-size: 6em !important;
   font-weight: 600;
 }
+.list-group-item i {
+  margin-right: 0.5em;
+}
 header {
   background-color: #666666;
   padding: 0;
@@ -213,9 +217,6 @@ header {
 }
 header .row {
   margin-top: 0;
-}
-header > .container {
-  padding: 0;
 }
 header .header-image {
   margin-top: 0.25em;
@@ -284,10 +285,21 @@ footer a:focus {
   text-transform: uppercase;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-@media all and (min-width: 767px) {
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .parallax h1 {
+    font-size: 6em;
+    line-height: 330px;
+  }
+}
+@media all and (min-width: 992px) {
   .parallax h1 {
     font-size: 10em;
     line-height: 330px;
+  }
+}
+@media all and (min-width: 992px) {
+  .parallax h1.spcl {
+    font-size: 9em;
   }
 }
 .parallax.parallax-home {
@@ -341,7 +353,7 @@ section.module h2 {
   margin-bottom: 40px;
   font-size: 2em;
 }
-@media all and (min-width: 767px) {
+@media all and (min-width: 992px) {
   section.module h2 {
     font-size: 3em;
   }
@@ -351,7 +363,7 @@ section.module p {
   font-size: 1.15em;
   font-weight: 300;
 }
-@media all and (min-width: 767px) {
+@media all and (min-width: 768px) {
   section.module p {
     font-size: 1.3em;
   }
