@@ -1,31 +1,70 @@
 extends layouts/default
 
 block content
-  ul
-    li
-      a(href='/') Home
-    li
-      a(href="analytics") Analytics
-    li
-      a(href="careers") Careers
-    li
-      a(href="company") Company
-    li
-      a(href="contactus") Contact Us
-    li
-      a(href="investors") Investors
-    li
-      a(href="measurement") Measurement
-    li
-      a(href="targeting") Targeting
+  header.navbar.navbar-inverse
+    .content
+      .container-fluid
+        .row
+          .col-xs-1.visible-xs
+          .col-xs-10.col-sm-3.header-image
+            a(href='/')
+              img(src='images/silverpush.png')
+          .col-sm-9.hidden-xs.text-right
+            ul.nav.navbar-nav.navbar-right
+              li
+                a(href='/') Home
+              li.dropdown
+                a.dropdown-toggle(data-toggle='dropdown', role='button', aria-expanded='true')
+                  | About
+                  span.caret
+                ul.dropdown-menu(role='menu')
+                  li
+                    a(href='company') Company
+                  li
+                    a(href='team') Team
+                  li
+                    a(href='investors') Investors
+                  li
+                    a(href='contactus') Contact Us
+                  li.divider
+                  li
+                    a(href='http://blog.silverpush.com/', target='_blank') Blog
+              li.dropdown
+                a.dropdown-toggle(data-toggle='dropdown', role='button', aria-expanded='false')
+                  | Products
+                  span.caret
+                ul.dropdown-menu(role='menu')
+                  li
+                    a(href='analytics') Analytics
+                  li
+                    a(href='targeting') Targeting
+                  li
+                    a(href='measurement') Measurement
+              li
+                a(href='careers') Careers
 
   div(ng-view)
+
+  footer.text-center.bkground-black
+    ul.list-inline
+      li
+        a(href='contactus')
+          span.fa.fa-phone
+      li
+        a(href='https://www.facebook.com/silverpush', target='_blank')
+          span.fa.fa-facebook
+      li
+        a(href='https://twitter.com/silverpush', target='_blank')
+          span.fa.fa-twitter
+      li
+        a(href='http://www.linkedin.com/company/2808449', target='_blank')
+          span.fa.fa-linkedin
+      li.text-xsmall.text-middle
+        | &copy; SilverPush 2012-2015
 
 block js
   script(src='js/lib/angular/angular.js')
   script(src='js/lib/angular/angular-route.js')
   script(src='js/app.js')
-  script(src='js/services.js')
-  script(src='js/controllers.js')
-  script(src='js/filters.js')
-  script(src='js/directives.js')
+  script(src='js/lib/jquery-2.0.3.min.js')
+  script(src='js/lib/bootstrap/bootstrap.min.js')
