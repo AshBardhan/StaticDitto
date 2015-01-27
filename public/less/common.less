@@ -183,7 +183,7 @@ img.img-gs {
     transition-timing-function: ease-out;
   }
   &:hover, &:focus, &:active {
-    &::before{
+    &::before {
       -webkit-transform: translateY(0);
       transform: translateY(0);
     }
@@ -198,4 +198,24 @@ img.img-gs {
   background: #E4BD81;
   padding-top: 1em;
   padding-bottom: 1em;
+}
+
+.navbar-inverse {
+  height: 60px;
+}
+
+.navbar-nav > li {
+  background-color: #212121;
+  padding-top: 4px;
+  border-bottom: 6px solid rgba(47, 172, 202, 1);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  @media all and (max-width:767px) {
+    border-bottom: 0;
+  }
+  &:hover {
+    padding-bottom: 6px;
+  }
 }
