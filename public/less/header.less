@@ -2,6 +2,10 @@ header {
   .bkground-base;
   padding: 0;
   margin-bottom: 0 !important;
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  z-index: 1;
   .row {
     margin-top: 0;
   }
@@ -10,8 +14,20 @@ header {
     img {
       height: 3em;
     }
-    @media screen and (max-width: 767px){
+    @media screen and (max-width: 767px) {
       .text-center;
+    }
+  }
+  .navbar-toggle {
+    float: left !important;
+    margin: @margin-base 0 !important;
+  }
+  .navbar-collapse {
+    @media all and (min-width:768px) {
+      .text-right;
+    }
+    @media all and (max-width:767px) {
+      margin: 0 -@margin-medium;
     }
   }
 }

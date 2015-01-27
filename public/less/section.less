@@ -20,9 +20,6 @@ section.module {
     @media all and (min-width: 768px) {
       .text-large;
     }
-    &:last-child {
-      margin-bottom: 0;
-    }
   }
   .row {
     margin-top: 0;
@@ -30,9 +27,9 @@ section.module {
       font-size: 3.5em;
       margin-bottom: @margin-base !important;
     }
-  }
-  p:last-child, .row:last-child {
-    margin-bottom: 0;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
   &.content {
     overflow: hidden;

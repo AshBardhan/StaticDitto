@@ -2,19 +2,19 @@ var userFlow = {
   currentSection: 1,
   scrollToSection: function (mode) {
     var totalSections = $('section.module').length;
-      if(mode === 'up') {
-        if(userFlow.currentSection >= 1) {
-          $('html, body').animate({
-            scrollTop: $('section.module:nth-child('+ (userFlow.currentSection) +')').offset().top
-          }, 1500);
-        }
-      } else {
-        if(userFlow.currentSection < totalSections) {
-          $('html, body').animate({
-            scrollTop: $('section.module:nth-child('+ (userFlow.currentSection+1) +')').offset().top
-          }, 1500);
-        }
+    if (mode === 'up') {
+      if (userFlow.currentSection >= 1) {
+        $('html, body').animate({
+          scrollTop: $('section.module:nth-child(' + (userFlow.currentSection) + ')').offset().top
+        }, 1500);
       }
+    } else {
+      if (userFlow.currentSection < totalSections) {
+        $('html, body').animate({
+          scrollTop: $('section.module:nth-child(' + (userFlow.currentSection + 1) + ')').offset().top
+        }, 1500);
+      }
+    }
   },
   initScrollPage: function () {
     $(document).on('scroll', function () {

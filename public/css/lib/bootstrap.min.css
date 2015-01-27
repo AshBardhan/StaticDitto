@@ -4259,10 +4259,14 @@ textarea.input-group-sm>.form-control, textarea.input-group-sm>.input-group-addo
     float: none;
     width: auto;
     margin-top: 0;
-    background-color: transparent;
+    background-color: rgba(255,255,255,0.1);
     border: 0;
     -webkit-box-shadow: none;
     box-shadow: none
+  }
+
+  .navbar-nav .open .dropdown-menu li.divider {
+    display: none;
   }
 
   .navbar-nav .open .dropdown-menu>li>a, .navbar-nav .open .dropdown-menu .dropdown-header {

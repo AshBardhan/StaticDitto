@@ -379,6 +379,10 @@ header {
   background-color: #666666;
   padding: 0;
   margin-bottom: 0 !important;
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 header .row {
   margin-top: 0;
@@ -392,6 +396,20 @@ header .header-image img {
 @media screen and (max-width: 767px) {
   header .header-image {
     text-align: center;
+  }
+}
+header .navbar-toggle {
+  float: left !important;
+  margin: 0.5em 0 !important;
+}
+@media all and (min-width: 768px) {
+  header .navbar-collapse {
+    text-align: right;
+  }
+}
+@media all and (max-width: 767px) {
+  header .navbar-collapse {
+    margin: 0 -1em;
   }
 }
 footer {
@@ -441,9 +459,6 @@ section.module p {
     font-size: 1.3em;
   }
 }
-section.module p:last-child {
-  margin-bottom: 0;
-}
 section.module .row {
   margin-top: 0;
 }
@@ -451,7 +466,6 @@ section.module .row .page-title {
   font-size: 3.5em;
   margin-bottom: 0.5em !important;
 }
-section.module p:last-child,
 section.module .row:last-child {
   margin-bottom: 0;
 }
