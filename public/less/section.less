@@ -1,7 +1,4 @@
 section.module {
-  &:last-child {
-    margin-bottom: 0;
-  }
   a {
     text-decoration: none;
     cursor: default;
@@ -10,24 +7,28 @@ section.module {
     }
   }
   h2 {
-    margin-bottom: 2em;
+    margin-bottom: 1em;
     font-size: 2em;
     @media all and (min-width: 992px) {
       font-size: 3em;
     }
   }
   p {
-    margin-bottom: @margin-base;
+    margin-bottom: @margin-medium;
     .text-medium;
     .text-normal;
     @media all and (min-width: 768px) {
       .text-large;
+    }
+    &:last-child {
+      margin-bottom: 0;
     }
   }
   .row {
     margin-top: 0;
     .page-title {
       font-size: 3.5em;
+      margin-bottom: @margin-base !important;
     }
   }
   p:last-child, .row:last-child {
@@ -54,6 +55,7 @@ section.module {
       color: rgb(55, 55, 55);
       padding: 1em 5%;
       min-height: 100%;
+      background-color: rgba(255, 255, 255, 0.48);
       @media screen and (max-width: 767px){
         .text-center;
       }
@@ -61,6 +63,9 @@ section.module {
     p {
       .text-small;
       .text-normal;
+    }
+    @media screen and (max-width: 767px){
+      height: 500px;
     }
   }
   &#product-div {
