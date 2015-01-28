@@ -5,13 +5,13 @@ var userFlow = {
     if (mode === 'up') {
       if (userFlow.currentSection >= 1) {
         $('html, body').animate({
-          scrollTop: $('section.module:nth-child(' + (userFlow.currentSection) + ')').offset().top
+          scrollTop: $('section.module:nth-child(' + (userFlow.currentSection) + ')').offset().top - 60
         }, 1500);
       }
     } else {
       if (userFlow.currentSection < totalSections) {
         $('html, body').animate({
-          scrollTop: $('section.module:nth-child(' + (userFlow.currentSection + 1) + ')').offset().top
+          scrollTop: $('section.module:nth-child(' + (userFlow.currentSection + 1) + ')').offset().top - 60
         }, 1500);
       }
     }
@@ -19,8 +19,8 @@ var userFlow = {
   initScrollPage: function () {
     $(document).on('scroll', function () {
       $('section.module').each(function () {
-        var top = $(this).offset().top;
-        var bottom = top + $(this).outerHeight(true);
+        var top = $(this).offset().top  - 60;
+        var bottom = top + $(this).outerHeight(true) ;
         var scrollTop = $(window).scrollTop();
         if (top <= scrollTop && bottom >= scrollTop) {
           userFlow.currentSection = $(this).index() + 1;
