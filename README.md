@@ -26,3 +26,6 @@ Replicas Created (with modifications)
   - Column layouts, text-alignment and animation fixes in multiple pages.
   - Slide to previous and next page section using 'up' and 'down' keys respectively.
   - Responsive Typography, where Font-size, Padding and Margin vary with screen size.
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/AshBardhan/staticditto/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
